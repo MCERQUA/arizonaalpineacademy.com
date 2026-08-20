@@ -36,6 +36,10 @@ export default function BookLessonPage() {
         </div>
       </section>
 
+      <div className="relative w-full h-56 sm:h-72">
+        <Image src="/images/booking-cta.jpg" alt="Skiers and snowboarders on an Arizona mountain slope" fill className="object-cover" />
+      </div>
+
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-3 space-y-10">

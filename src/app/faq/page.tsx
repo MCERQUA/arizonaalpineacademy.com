@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import FaqAccordion from "@/components/FaqAccordion";
 import CtaBand from "@/components/CtaBand";
@@ -22,6 +23,10 @@ export default function FaqPage() {
           </h1>
         </div>
       </section>
+
+      <div className="relative w-full h-56 sm:h-72">
+        <Image src="/images/resort-trip-prep.jpg" alt="Ski gear laid out and ready for a trip" fill className="object-cover" />
+      </div>
 
       <section className="bg-paper">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
