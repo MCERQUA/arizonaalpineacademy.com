@@ -1,0 +1,104 @@
+BUILD STATUS — arizonaalpineacademy.com
+Built: 2026-08-20 by batch3-audit (josh-desk-3@mesh)
+Classification: TRADE-SERVICE LEAD-GEN SITE (NOT insurance) — "Arizona Alpine Academy," a
+standalone local business brand for ski & snowboard instruction and trip-prep serving Phoenix and
+Tucson, Arizona first-timers heading to Arizona's own resorts. NOT Contractors Choice Agency
+branded — CCA's canonical phone/email/address are reused only as the operating contact channel,
+matching the trade-service portfolio pattern; no CCA/insurance narrative anywhere on the site.
+
+BUILD RESULT: SUCCESS (next build exit code 0, clean on first try — no fixes needed)
+Framework: Next.js 15.3.9, App Router, output: 'export' (static export), trailingSlash: true
+Package manager: pnpm (pnpm-lock.yaml only, no package-lock.json — verified clean)
+.gitignore written first. pnpm-workspace.yaml uses `packages: ["."]` (NOT `packages: []`, which
+the gate now hard-fails on) — got this right first try, same as the prior build this session.
+
+RESEARCH (DataForSEO, direct API — shared proxy at 172.25.0.1:6350 still unreachable):
+CRITICAL FINDING: the exact phrase "alpine academy" (3,600/mo nationally) is ANOTHER homograph/
+name collision, same shape as the prior build's "ski machine" finding — it's used generically by
+dozens of unrelated schools nationwide, most notably a residential treatment facility for teens
+in Erda, Utah (alpineacademy.org, the #1 national result), plus unrelated charter schools and
+preschools. "alpine academy arizona" surfaces the same Utah facility plus an unrelated public
+Alpine Elementary School/District in the real town of Alpine, AZ. ZERO ski/snowboard content
+anywhere in either SERP. DID NOT target "alpine academy" as an SEO phrase anywhere, and
+deliberately verified the content contains zero language resembling a residential-treatment or
+therapeutic-boarding-school program (grepped for "residential treatment," "therapeutic,"
+"troubled teen," "wilderness therapy," "behavioral" — zero hits). Full detail in
+ai/research/keywords.json critical_finding.
+MARKET REALITY CHECK: verified real, large demand instead around Arizona's own ski resorts and
+first-timer instruction — "arizona snowbowl" 40,500/mo, "sunrise park resort" 18,100/mo, "mount
+lemmon ski valley" 8,100/mo, "arizona ski resorts" 6,600/mo, "alpine skiing lessons" 4,400/mo.
+SERP confirmed a real independent instruction business already operates in this exact niche
+(skipro.com) and a nonprofit youth racing team (flagstaffskiclub.org) — proof the model works,
+with room for a dedicated "desert-city first-timer" instruction/prep brand neither of those is.
+Site does NOT sell lift tickets/rentals/passes — every relevant page explicitly routes readers to
+book those directly with the resort. Full detail in ai/research/competitors.md and topical-map.md.
+
+STITCH DESIGN — MANDATORY step completed, zero quota issues, first try clean, 3rd build in a row:
+Project: projects/7164676537522585668
+Design system: assets/10284968058394400164 ("Trailhead Gold Academy", LIGHT mode)
+4 screens generated (home + 3 key pages): home.html, ski-lessons.html,
+first-time-at-arizona-snowbowl.html, book-a-lesson.html — all in .stitch-pages/, confirmed
+nonzero size. Font gotcha (3rd occurrence this session): BITTER rejected by the Stitch API enum
+— mockups render with SPACE_GROTESK/WORK_SANS; the real coded build correctly applies Bitter/
+Work Sans via next/font/google. New gotcha found and documented: one generate call returned 2
+screen candidates (one a bare image asset with no htmlCode) — fork fixed extraction to search
+for the screen with htmlCode present. Fork found and fixed 6 sub-50%-opacity scrim stops across
+3 mockup files (one directly behind a hero H1) before finishing.
+
+DESIGN SYSTEM: warm earth tones, hue-verified — trailhead gold #B8862E (primary), juniper green
+#435C42 (secondary), canyon rust #9C4A2E (accent), warm stone/cream #F7F1E4 (base bg), timberline
+dark-brown #241E16 (inverted band). Third distinct palette this session (indemnity site used
+rust/forest/amber, ski-machine site used copper/saguaro/gold). Typography also distinct: Bitter
+(headline, sturdy slab-serif) + Work Sans (body) — a different pairing from both prior builds'
+Fraunces/Inter. Deliberately avoids icy-blue/silver "snow" visual cliches per instruction — warm
+golden-hour/bright-mountain-sun photography instead. Motif: trailhead/mountain-sun.
+
+SITE STRUCTURE: 5 cluster pages (Ski Lessons, Snowboard Lessons, Kids & Family Ski Programs,
+First Time at Arizona Snowbowl, Sunrise & Mount Lemmon Trip Prep) instead of generic service
+pages, a "Book a Lesson" 4-field lead form (Name, Phone, Preferred Resort, Experience Level)
+instead of a generic quote form, LocalBusiness + FAQPage + BreadcrumbList + Article JSON-LD.
+
+ROUTES (18 static index.html routes generated, plus robots.txt/sitemap.xml/icon.svg):
+  /
+  /about/, /contact/, /book-a-lesson/, /faq/, /blog/
+  Cluster pages (5, dynamic [slug] route via generateStaticParams):
+    /ski-lessons/, /snowboard-lessons/, /kids-family-ski-programs/,
+    /first-time-at-arizona-snowbowl/, /sunrise-mount-lemmon-trip-prep/
+  Blog posts (4):
+    /blog/is-snowbowl-good-for-beginners/, /blog/cost-to-ski-in-flagstaff/,
+    /blog/first-timer-gear-checklist/, /blog/snowbowl-vs-sunrise-vs-mount-lemmon/
+  /privacy/, /terms/
+
+WORD COUNTS — TARGET MET THIS TIME (explicit fix after the prior build's disclosed shortfall):
+content fork was instructed to self-check word counts and do a genuine expansion pass before
+returning. Result: all 16 source files hit their target range on this pass, 12,401 words total
+(vs. the prior build's 7,434 words when targets were missed). Homepage 1,105 (target 1100-1400,
+essentially at floor) | 5 cluster pages 791-874 each (target 700-1100) | about 640 (target
+600-800) | contact 357 (target 250-350, 7 words over ceiling, negligible) | book-a-lesson 579
+(target 500-700) | faq 863, 15 Q&A pairs (target 700-900) | privacy 374, terms 415 (target
+350-450 each) | 4 blog posts 901-1,034 each (target 900-1300). No fabricated testimonials,
+stats, or names — only real facts and the canonical phone/email/address.
+
+IMAGES: 10/10 generated successfully (stabilityai/stable-diffusion-3-medium-diffusers on
+hf-inference, zero retries needed — 3rd consecutive build using this model after FLUX.1-schnell's
+confirmed death), 1.8MB total, all wired (including 2 initially-orphaned images —
+booking-cta.jpg and resort-trip-prep.jpg — now placed on the book-a-lesson and FAQ pages
+respectively). Warm golden-hour/bright-daylight color grading confirmed, no icy-blue drift; sky
+color reads as natural daylight blue in photos, which is physically accurate and not a UI/brand
+palette violation (the ban is on site color tokens, not literal sky color in photography).
+
+FORMS: 2 Netlify-ready forms (contact, book-a-lesson), both with data-netlify + honeypot +
+hidden traffic_source/landing_url AEO capture fields + declared in public/__forms.html decoy.
+netlify.toml has direct submission_created webhook `url =` for both forms.
+
+GATE: bash pre-deploy-content-check.sh arizonaalpineacademy.com <dir> → PASS (exit 0), first try.
+  content own-keyword hits: 20 | palette: no banned hues | scrim: no decaying scrim found
+  stitch: 4 screens across 10 routes | pnpm-workspace packages check: passed (uses ["."], not [])
+  no git remote yet (not pushed)
+
+GIT: own local repo (not yet pushed — build + commit only, no GitHub auth in this container).
+node_modules/.next/out/package-lock.json gitignored and confirmed untracked. pnpm-lock.yaml
+commits next@15.3.9 pinned exactly.
+
+NOT DONE (explicitly out of scope per task): no GitHub repo push, no Netlify deploy. Sibling
+domain (azalpineacademy.com) intentionally NOT built per instruction — flagship only.
