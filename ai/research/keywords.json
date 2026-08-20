@@ -1,0 +1,35 @@
+{
+  "source": "DataForSEO (direct API, 2026-08-20) — proxy at 172.25.0.1:6350 still unreachable, called api.dataforseo.com directly",
+  "critical_finding": "The exact phrase 'alpine academy' (vol 3,600/mo nationally) is a HOMOGRAPH/NAME COLLISION identical in shape to the prior 'ski machine' finding — it is used generically by dozens of UNRELATED schools nationwide: a residential treatment facility for teens in Erda, Utah (alpineacademy.org, the #1 result), multiple unrelated charter schools (Sparks NV, Chubbuck ID), preschools (Lake Orion MI, Oviedo FL), and a California opportunity school. 'alpine academy' and 'alpine academy utah' return the IDENTICAL search volume (3,600/mo), confirming almost all of that volume is the Utah teen residential-treatment facility specifically, NOT ski/snow-sport instruction anywhere. Verified via SERP for both 'alpine academy' (national) and 'alpine academy arizona' — zero ski/snowboard-related results in either; 'alpine academy arizona' surfaces the unrelated public Alpine Elementary School/District in the actual town of Alpine, AZ (Apache County), plus the same Utah treatment facility. DO NOT target 'alpine academy' as an SEO phrase anywhere on this site, and DO NOT build this site as a teen residential-treatment/therapeutic-boarding-school business — that is a real, unrelated, highly-regulated business type (clinical licensing, distressed-family audience) with zero connection to what this build is for. The domain's brand name uses 'Alpine Academy' as a name only; all SEO targeting uses the real, verified Arizona ski/snowboard-instruction demand below instead.",
+  "market_reality_check": "Real, large, verified demand exists around Arizona's own ski resorts and beginner/first-timer instruction — NOT a homograph, NOT ambiguous. 'arizona snowbowl' alone is 40,500/mo (Flagstaff's resort — the dominant informational/navigational term for AZ skiing). 'sunrise park resort' 18,100/mo (White Mountains resort near Greer). 'mount lemmon ski valley' 8,100/mo (Tucson-area resort). 'arizona ski resorts' 6,600/mo. SERP for 'ski lessons flagstaff' shows the resort's own site (snowbowl.ski) dominating lessons/rentals content, but a real independent instruction business already exists (skipro.com — 'Ski & Snowboarding Lessons in Arizona') and a nonprofit youth racing team (flagstaffskiclub.org) — confirming a private, non-resort ski/snowboard instruction business is a viable, real local-service category, just under-filled for the Phoenix-Valley-resident-prep angle specifically. PAA signals ('Is Arizona Snowbowl good for beginners?', 'How much does it cost to ski in Flagstaff?', 'Is Flagstaff good for skiing?') confirm strong first-timer/beginner search intent — most Phoenix-metro residents have never skied and are searching from a desert-city starting point, which is exactly this site's angle.",
+  "keywords": [
+    {"keyword": "arizona snowbowl", "search_volume": 40500, "cpc": 0.77, "competition": "LOW", "use": "background/context — the dominant navigational term; do not chase head-on (resort's own site owns it), but every first-timer/beginner content angle keys off this destination"},
+    {"keyword": "sunrise park resort", "search_volume": 18100, "cpc": 4.85, "competition": "LOW", "use": "background/context — second AZ resort, White Mountains"},
+    {"keyword": "sunrise ski resort", "search_volume": 18100, "cpc": 4.85, "competition": "LOW", "use": "same resort, alt phrasing"},
+    {"keyword": "mount lemmon ski valley", "search_volume": 8100, "cpc": 0.79, "competition": "LOW", "use": "background/context — Tucson-area resort"},
+    {"keyword": "arizona ski resorts", "search_volume": 6600, "cpc": 1.76, "competition": "LOW", "use": "homepage/overview keyword"},
+    {"keyword": "alpine skiing lessons", "search_volume": 4400, "cpc": null, "competition": "LOW", "use": "primary service keyword — genuine ski-instruction intent, NOT the 'alpine academy' collision"},
+    {"keyword": "rock climbing gym phoenix", "search_volume": 720, "cpc": 1.86, "competition": "LOW", "use": "considered for broader mountain-sports framing; kept out of scope — ski/snowboard demand dominates by an order of magnitude, a climbing-gym pivot would dilute focus and isn't supported by comparable volume"},
+    {"keyword": "arizona snowbowl rentals", "search_volume": 390, "cpc": 1.49, "competition": "LOW", "use": "gear/rental-prep content page"},
+    {"keyword": "ski club phoenix", "search_volume": 110, "cpc": null, "competition": "LOW", "use": "background — confirms Phoenix-based ski community demand"},
+    {"keyword": "arizona mountaineering club", "search_volume": 110, "cpc": null, "competition": "LOW", "use": "background only — mountaineering-club demand is real but far smaller than ski-instruction demand; not a primary pillar"},
+    {"keyword": "arizona snowbowl lessons", "search_volume": 90, "cpc": 0.67, "competition": "MEDIUM", "use": "primary local keyword — direct lesson-booking intent"},
+    {"keyword": "ski lessons flagstaff", "search_volume": 40, "cpc": null, "competition": "LOW", "use": "primary local keyword"},
+    {"keyword": "snowboard lessons flagstaff", "search_volume": 20, "cpc": 0.63, "competition": "LOW", "use": "snowboard-specific cluster page"},
+    {"keyword": "ski rental arizona", "search_volume": 10, "cpc": 0.12, "competition": "LOW", "use": "gear-prep content"},
+    {"keyword": "ski gear rental flagstaff", "search_volume": 10, "cpc": null, "competition": null, "use": "gear-prep content"},
+    {"keyword": "junior ski team", "search_volume": 10, "cpc": null, "competition": null, "use": "kids/family program framing"},
+    {"keyword": "youth ski racing", "search_volume": 10, "cpc": null, "competition": "HIGH", "use": "background — competitive-team angle exists (flagstaffskiclub.org) but this site is instruction/prep, not a racing team; kept as light context"},
+    {"keyword": "learn to ski arizona", "search_volume": null, "cpc": null, "competition": null, "use": "homepage H1 target — exact-match to the site's core value prop despite no measured volume"},
+    {"keyword": "kids ski lessons arizona", "search_volume": null, "cpc": null, "competition": null, "use": "kids & family program cluster page"},
+    {"keyword": "family ski trip arizona", "search_volume": null, "cpc": null, "competition": null, "use": "kids & family program cluster page"},
+    {"keyword": "alpine academy", "search_volume": 3600, "cpc": 10.95, "competition": "LOW", "use": "EXCLUDED — see critical_finding, homograph collision with unrelated teen-treatment/charter/preschool brands nationwide"},
+    {"keyword": "wilderness therapy arizona", "search_volume": null, "cpc": null, "competition": null, "use": "EXCLUDED — checked and ruled out; no measurable demand signal, and not this business's category regardless"}
+  ],
+  "people_also_ask": [
+    "How much are ski lessons per hour?",
+    "Is Arizona Snowbowl good for beginners?",
+    "How much does it cost to ski in Flagstaff?",
+    "Is Flagstaff good for skiing?"
+  ]
+}
