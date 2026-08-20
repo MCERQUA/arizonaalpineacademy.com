@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>First Time at Arizona Snowbowl - Arizona Alpine Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#B8862E', // Warm gold
+                            dark: '#A37222'
+                        },
+                        secondary: {
+                            DEFAULT: '#435C42', // Juniper green
+                        },
+                        accent: {
+                            DEFAULT: '#9C4A2E', // Canyon rust
+                        },
+                        background: {
+                            DEFAULT: '#F7F1E4', // Cream
+                            alt: '#EAE1D0'
+                        },
+                        surface: {
+                            dark: '#241E16', // Timberline dark brown
+                        }
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Bitter", "serif"],
+                        display: ["Bitter", "serif"],
+                        body: ["Work Sans", "sans-serif"],
+                        label: ["Work Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-secondary font-body antialiased flex flex-col min-h-screen">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#F7F1E4] dark:bg-[#241E16] shadow-sm docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-headline font-black text-[#241E16] dark:text-[#F7F1E4] hover:opacity-80 transition-opacity" href="#">
+                Arizona Alpine Academy
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline text-headline font-bold text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">Lessons</a>
+<a class="font-headline text-headline font-bold text-[#B8862E] border-b-2 border-[#B8862E] pb-1 hover:opacity-80 transition-opacity" href="#">Resorts</a>
+<a class="font-headline text-headline font-bold text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">Plan Trip</a>
+<a class="font-headline text-headline font-bold text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">FAQ</a>
+</div>
+<a class="hidden md:inline-flex bg-[#B8862E] text-[#F7F1E4] px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all transform active:scale-95 duration-150 shadow-sm" href="#">
+                Book a Lesson
+            </a>
+<button class="md:hidden text-[#435C42] dark:text-[#F7F1E4]">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[70vh] min-h-[500px] flex items-center bg-surface-dark overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Arizona Snowbowl Sunrise" class="w-full h-full object-cover opacity-80" data-alt="A wide panoramic shot of a snowy mountain slope at sunrise in Arizona Snowbowl. Warm golden sunlight bathes the snow and pine trees, creating a welcoming, non-intimidating atmosphere suitable for beginners. The sky is clear, and the light is soft and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWkgFjLv1C8l6A27JjIiUchS7ovz4Ds8Kdy9YhpsfwLaFOdb_I9WSi73pxbDeqqVaYDwwVQeR2IfaejNjMcnnBjSeLTuAZWqLSHIqDFN1Z8CtyMfcHWOIlIQUz3VStz9FeKPtQIswSuK4e5LLUrJcbCGIzRHBAD8bqgv3krX7-z0tDKeZ4gdpbP1nwjDciqJPH0jH4ggwuoKeQKDc9CSWBsoSF8zKgXNZ8rHkWubcRUtH1e2ZAgq5PXxnfGZcDrssFouUgjWyzqJA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-dark/90 to-surface-dark/40 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm mb-4">
+<span class="material-symbols-outlined">explore</span> Resort Guide
+                    </span>
+<h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-bold text-background mb-6 leading-tight">
+                        First Time at Arizona Snowbowl? Here's What to Know
+                    </h1>
+<p class="text-background/90 text-xl mb-8 font-body leading-relaxed max-w-xl">
+                        Snowbowl offers some of the best beginner terrain in the Southwest. We'll help you navigate your first day on the mountain with confidence.
+                    </p>
+<a class="inline-flex items-center justify-center bg-primary text-background px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-colors shadow-lg group" href="#">
+                        Book a Lesson
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Narrative Section -->
+<section class="py-24 bg-background">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="font-headline text-4xl font-bold text-surface-dark mb-8">Is Snowbowl Good for Beginners?</h2>
+<div class="space-y-6 text-lg text-secondary leading-relaxed">
+<p>
+                        Absolutely. Arizona Snowbowl is uniquely positioned as an excellent starting point for new skiers and snowboarders from Phoenix and Tucson. It's home to Hart Prairie, one of the largest continuous beginner areas in the entire United States.
+                    </p>
+<p>
+                        Unlike steeper, more intimidating resorts, the gentle, wide-open slopes of Hart Prairie give you plenty of room to practice your turns without feeling crowded or rushed. The warm Arizona sun and clear skies often provide comfortable conditions for learning, far removed from the icy, biting cold you might expect elsewhere.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Checklist Bento Grid -->
+<section class="py-24 bg-surface-dark text-background relative overflow-hidden">
+<!-- Subtle pattern overlay -->
+<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#F7F1E4 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">First-Timer Checklist</h2>
+<p class="text-background/80 text-lg">Everything you need to know before you leave the desert.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-dark/50 border border-background/10 p-8 rounded-2xl backdrop-blur-sm hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-2xl fill">backpack</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">What to Bring</h3>
+<ul class="space-y-3 text-background/80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Sunscreen &amp; Goggles:</strong> High altitude means stronger UV rays, even in winter.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Layers:</strong> Start warm, you can always shed layers as you get active.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Water:</strong> Hydration is critical at elevation.</span>
+</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-dark/50 border border-background/10 p-8 rounded-2xl backdrop-blur-sm hover:border-primary/50 transition-colors md:-translate-y-4">
+<div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-2xl fill">landscape</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">What to Expect</h3>
+<ul class="space-y-3 text-background/80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Altitude (9,200ft+):</strong> Take it slow. It's normal to feel winded quickly.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Friendly Staff:</strong> The mountain ambassadors are there to help beginners.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Easy Lift Access:</strong> Surface lifts and slow chairs make loading a breeze.</span>
+</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-dark/50 border border-background/10 p-8 rounded-2xl backdrop-blur-sm hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-2xl fill">directions_car</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Getting There</h3>
+<ul class="space-y-3 text-background/80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>From Phoenix:</strong> A scenic 2.5 - 3 hour drive up I-17.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span><strong>Road Conditions:</strong> Always check ADOT for Hwy 180 conditions before heading up.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-[#241E16] text-[#F7F1E4] text-center border-t border-white/10">
+<div class="max-w-3xl mx-auto px-8">
+<span class="material-symbols-outlined text-5xl text-[#B8862E] mb-6">downhill_skiing</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Ready for Your First Run?</h2>
+<p class="text-lg text-white/80 mb-10 max-w-xl mx-auto">
+                    Join one of our beginner-friendly group lessons to build a solid foundation and ensure your first time on the snow is a safe, fun, and memorable experience.
+                </p>
+<a class="inline-flex items-center justify-center bg-[#B8862E] text-[#241E16] px-10 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1" href="#">
+                    Book a Lesson Now
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#241E16] dark:bg-[#241E16] flat no shadows">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-headline font-bold text-[#F7F1E4]">Arizona Alpine Academy</span>
+<span class="font-body text-body text-[#F7F1E4] opacity-80 text-sm">© 2024 Arizona Alpine Academy. All rights reserved.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body text-body text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Lessons</a>
+<a class="font-body text-body text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Resorts</a>
+<a class="font-body text-body text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Plan Trip</a>
+<a class="font-body text-body text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">FAQ</a>
+<a class="font-body text-body text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Privacy Policy</a>
+</div>
+</footer>
+</body></html>
