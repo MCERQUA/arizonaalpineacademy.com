@@ -1,0 +1,23 @@
+# Arizona Alpine Academy — Ski & Snowboard Instruction
+
+> Ski and snowboard lessons and trip prep for Phoenix and Tucson, Arizona first-timers heading
+> to Arizona's own ski resorts: Arizona Snowbowl, Sunrise Park Resort, and Mount Lemmon Ski
+> Valley.
+
+## Programs
+- Ski Lessons: /ski-lessons/
+- Snowboard Lessons: /snowboard-lessons/
+- Kids & Family Ski Programs: /kids-family-ski-programs/
+- First Time at Arizona Snowbowl: /first-time-at-arizona-snowbowl/
+- Sunrise & Mount Lemmon Trip Prep: /sunrise-mount-lemmon-trip-prep/
+
+## Other
+- About: /about/
+- FAQ: /faq/
+- Blog: /blog/
+- Contact: /contact/
+- Book a Lesson: /book-a-lesson/
+
+## Contact
+Phone: 844-967-5247
+Email: josh@contractorschoiceagency.com
