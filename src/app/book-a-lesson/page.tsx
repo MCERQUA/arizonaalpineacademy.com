@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import BookLessonForm from "@/components/BookLessonForm";
