@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arizona Slope Academy - Learn to Ski &amp; Snowboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#B8862E", // Trailhead Gold
+                        secondary: "#435C42", // Juniper Green
+                        tertiary: "#9C4A2E", // Canyon Rust
+                        background: "#F7F1E4", // Stone/Cream Paper
+                        surface: "#F7F1E4",
+                        dark: "#241E16", // Timberline Dark-Brown
+                    },
+                    fontFamily: {
+                        headline: ["Bitter", "serif"],
+                        body: ["Work Sans", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-dark font-body antialiased selection:bg-primary/20 selection:text-dark">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-[#F7F1E4] shadow-sm border-b border-[#435C42]/10 sticky top-0 z-50 w-full transition-all duration-200 ease-in-out">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="font-headline text-2xl font-bold text-[#B8862E] tracking-tight" href="#">AZ Slope Academy</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body text-[#B8862E] font-bold border-b-2 border-[#B8862E] pb-1 hover:bg-[#F7F1E4] hover:opacity-90" href="#">Lessons</a>
+<a class="font-body text-[#241E16] hover:text-[#B8862E] transition-colors hover:bg-[#F7F1E4] hover:opacity-90" href="#">Resorts</a>
+<a class="font-body text-[#241E16] hover:text-[#B8862E] transition-colors hover:bg-[#F7F1E4] hover:opacity-90" href="#">Plan Trip</a>
+<a class="font-body text-[#241E16] hover:text-[#B8862E] transition-colors hover:bg-[#F7F1E4] hover:opacity-90" href="#">FAQ</a>
+</div>
+<div class="hidden md:flex items-center space-x-6">
+<span class="text-dark font-medium font-body flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">phone_in_talk</span>
+                    844-967-5247
+                </span>
+<a class="bg-primary hover:bg-primary/90 text-background px-6 py-2.5 rounded-full font-semibold transition-colors duration-200" href="#">
+                    Book a Lesson
+                </a>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-dark p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<section class="relative bg-background pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 font-medium">
+<span class="material-symbols-outlined text-sm">wb_sunny</span>
+                    Warm &amp; Welcoming Instruction
+                </div>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-dark leading-tight">
+                    Learn to Ski or Snowboard in Arizona
+                </h1>
+<p class="text-xl text-dark/80 leading-relaxed font-body">
+                    We specialize in teaching desert-city first-timers and families. Prepare for your first day trip to Arizona's beautiful resorts with no pressure and expert guidance.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary hover:bg-primary/90 text-background px-8 py-4 rounded-full font-semibold text-lg text-center transition-transform hover:scale-105 duration-200 shadow-lg shadow-primary/20 flex items-center justify-center gap-2" href="#">
+                        Book a Lesson
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-white hover:bg-gray-50 text-dark border-2 border-dark/10 px-8 py-4 rounded-full font-semibold text-lg text-center transition-colors duration-200 flex items-center justify-center gap-2" href="#">
+                        Plan My First Trip
+                        <span class="material-symbols-outlined">map</span>
+</a>
+</div>
+</div>
+<div class="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A warm, sun-drenched golden hour photograph of a family enjoying their first time skiing in Arizona mountains. The light is warm trailhead gold, emphasizing a welcoming, non-intimidating atmosphere. There are no icy blues or cold tones; instead, the image features earthy greens of pine trees and warm sunlight filtering through. The mood is joyful, beginner-friendly, and optimistic, capturing the desert-winter aesthetic perfectly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3lK9ixX3iD7EJ70caPsq-chJ5bG5rG0owlo0CUMHqRWxJ3QmHlHHnKDvncOcPFtluEey7YDLX0oqYOzccSHOxvNSmUTuZKYH0i1TXggFSlIV1C-u4dCzEuHeWg6MI0-_xDLHulFMimxv79UJGLgrWktNxxjya4k_kmydbSNPn6n6XbAY3vlr01VzVehAj7DCfN88wlsaXcTB444TFot00EoySA__8pjgB43HtqNJyMuIaIPSle8bkV6xqv9pQ9DWT9Gp825iaqtM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent"></div>
+</div>
+</div>
+<!-- Decorative subtle pattern -->
+<div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+</section>
+<!-- 2. Trust Bar -->
+<section class="bg-dark text-background py-10 relative z-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-background/10">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-weight="fill">verified</span>
+<span class="font-medium">Experienced Instructors</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-weight="fill">location_on</span>
+<span class="font-medium">Serving the Valley &amp; Tucson</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-weight="fill">sentiment_satisfied</span>
+<span class="font-medium">Beginner-Friendly</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-weight="fill">waving_hand</span>
+<span class="font-medium">No Pressure</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Overview & 4. 5-Card Grid (Bento Style) -->
+<section class="bg-[#F2EADB] py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-3xl mb-16">
+<h2 class="font-headline text-4xl lg:text-5xl font-bold text-dark mb-6">Everything You Need for Your First Time on Snow</h2>
+<p class="text-lg text-dark/70 font-body leading-relaxed">
+                    We don't just teach you how to slide down a hill. We help you plan the entire trip, from renting gear in the valley to navigating the parking lot at Arizona resorts. Let's make your first winter adventure memorable for the right reasons.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Large Card: Ski Lessons -->
+<div class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, warm-toned photograph of a ski instructor gently helping a beginner adjust their skis on a sunny day. The lighting is golden and inviting, highlighting the earthy tones of their winter gear against a bright, warm snow backdrop. The aesthetic avoids cold, harsh blues, focusing instead on trust, encouragement, and the beautiful Arizona mountain sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6HqIE4HXzU8FKIVoOlzJmVvOa10OjbhQ0zu2dEZq2YczJDEpdFhKMsLg2xkWN1JUDhIxU857nI_nHZi445JWOjJ1sWZp5__kv864iDGiIduTjQ6wWcV0sHTDxie_f0C9L-WVC_jUIesXitAadlr_pKI-axDYmAftF8Tbf5VTZA5eMitBuvTnfZQTbfzc8s_r9ow_c972-nvrz8pIFw2kPfj5ey0IurTQVhXHSOL4U22ckGWIfF5Gj0f_NRANiqL6p5JgsXorA3r4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-background">downhill_skiing</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-background mb-2">Ski Lessons</h3>
+<p class="text-background/80 mb-4 max-w-md">Patient, step-by-step instruction designed specifically for adults who have never seen snow before.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-white transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Snowboard Lessons -->
+<div class="bg-white rounded-3xl p-8 border border-dark/5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">snowboarding</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-dark mb-3">Snowboard Lessons</h3>
+<p class="text-dark/70 text-sm">Find your balance and link your first turns with our specialized beginner snowboard clinics.</p>
+<div class="absolute -bottom-8 -right-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl">snowboarding</span>
+</div>
+</div>
+<!-- Kids & Family -->
+<div class="bg-primary text-background rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">family_restroom</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Kids &amp; Family Ski Programs</h3>
+<p class="text-background/90 text-sm">Keep the whole family smiling with group lessons that focus on safety and fun.</p>
+</div>
+<!-- AZ Snowbowl -->
+<div class="relative rounded-3xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A scenic, warm-toned view of Arizona Snowbowl peaks in Flagstaff, captured during a bright, sunny afternoon. The snow is illuminated by a warm, golden sunlight, contrasting with the dark juniper green of the surrounding pine forests. The image feels approachable and inviting, completely devoid of intimidating, cold, icy aesthetic tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDklX8qjaffzy_DB9AkigV1vPN_iPatT3VZcXF1nd2vQ1L56AfgYr7KQZBTtt3cI_IuM429vfn8rIUpUB8BtgFa3na8Ej1Znn6RTwZ7FpXKoCZ2ZXq5qiSrfTNZ6FVuQhOFDCb9ZolFOjRfDVSxU_IUGIhAP7R-tRI-drubHN92pcANitjCvilL0TcI-EXN9dnPM898i9q3AdpgqEaU1WCoS0MaqRER_BLDE5QIYXQYfU60UwF42sr77MllFkRlC5W8kUJ3HL3JLqM"/>
+<div class="absolute inset-0 bg-dark/50 group-hover:bg-dark/40 transition-colors"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline text-xl font-bold text-background mb-1">First Time at Arizona Snowbowl</h3>
+<p class="text-background/80 text-sm">Flagstaff trip guides &amp; prep.</p>
+</div>
+</div>
+<!-- Sunrise & Mt Lemmon -->
+<div class="bg-white rounded-3xl p-8 border border-dark/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-tertiary/10 text-tertiary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">landscape</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-dark mb-2">Sunrise &amp; Mount Lemmon</h3>
+<p class="text-dark/70 text-sm">Prepare for White Mountains or Tucson area resort adventures.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Final CTA (Timberline Background) -->
+<section class="bg-dark text-background py-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none transform translate-x-1/3 -translate-y-1/3">
+<span class="material-symbols-outlined" style="font-size: 400px;">ac_unit</span>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="font-headline text-4xl lg:text-6xl font-bold mb-6">Ready for Your First Run?</h2>
+<p class="text-xl text-background/80 mb-10 max-w-2xl mx-auto">
+                Don't let the details overwhelm you. We'll handle the instruction, you focus on the fun. Book your lesson today and let's get you on the snow.
+            </p>
+<a class="inline-block bg-primary hover:bg-primary/90 text-background px-10 py-5 rounded-full font-bold text-xl transition-transform hover:scale-105 duration-200 shadow-xl shadow-primary/20" href="#">
+                Book a Lesson
+            </a>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#241E16] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline text-xl text-[#B8862E] font-bold tracking-tight">AZ Slope Academy</span>
+<p class="font-body text-[#F7F1E4]/60 text-sm text-center md:text-left">
+                    © 2024 Arizona Slope Academy. Prepared for the Sun, Built for the Snow.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body text-[#F7F1E4] hover:text-[#B8862E] transition-colors text-sm" href="#">About Us</a>
+<a class="font-body text-[#F7F1E4] hover:text-[#B8862E] transition-colors text-sm" href="#">Contact</a>
+<a class="font-body text-[#F7F1E4] hover:text-[#B8862E] transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="font-body text-[#F7F1E4] hover:text-[#B8862E] transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
