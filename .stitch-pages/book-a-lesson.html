@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Lesson - Arizona Alpine Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#B8862E', // trailhead gold
+                            secondary: '#435C42', // juniper green
+                            accent: '#9C4A2E', // canyon rust
+                            bg: '#F7F1E4', // warm stone/cream paper
+                            dark: '#241E16', // timberline dark-brown
+                        }
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Bitter", "serif"],
+                        body: ["Work Sans", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-body bg-brand-bg text-brand-dark antialiased selection:bg-brand-primary selection:text-white flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-[#F7F1E4] dark:bg-[#241E16] text-[#B8862E] dark:text-[#B8862E] font-headline text-headline font-bold docked full-width top-0 shadow-sm sticky z-50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-headline font-black text-[#241E16] dark:text-[#F7F1E4]">
+                Arizona Alpine Academy
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#B8862E] border-b-2 border-[#B8862E] pb-1 transition-opacity" href="#">Lessons</a>
+<a class="text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">Resorts</a>
+<a class="text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">Plan Trip</a>
+<a class="text-[#435C42] dark:text-[#F7F1E4] hover:text-[#B8862E] hover:opacity-80 transition-opacity" href="#">FAQ</a>
+</nav>
+<button class="bg-brand-primary text-white px-6 py-2 rounded-full font-body font-medium hover:bg-brand-dark transition-colors hidden md:block">
+                Book a Lesson
+            </button>
+<button class="md:hidden text-brand-dark">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-brand-dark text-brand-bg py-24 px-8 overflow-hidden">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<img alt="Arizona Alpine Academy Hero Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvg6b6S2mS9mdIb6Cw7m0FSz1rUSioxWr33GWHGHOl-jusqKEhqMvwmYOUPb7UPezdUOyIsPuV1RZeZeqEVbr21aAL2AiOXdFwAbH8NroOwgY4Z2sjWfOx8MyNs9nA3hp0S3Mk5IMC-d6idWQFQEOHWZpVct4y8oup9CKe5-OwT0rt-AwZkCImUztllx_6xNcoYaXW4NBLYHwIXmupMcvTa1okYfKWYiLSVzzDn-eCePRpN04oKq6kASg"/>
+</div>
+<div class="max-w-4xl mx-auto relative z-10 text-center">
+<h1 class="font-headline text-5xl md:text-6xl font-bold mb-6 text-brand-primary">Book a Lesson</h1>
+<p class="text-lg md:text-xl font-light opacity-90 max-w-2xl mx-auto leading-relaxed">
+                    Ready to transition from the desert to the snow? Fill out the form below for a no-pressure booking request. Our experts will help you plan every detail.
+                </p>
+</div>
+</section>
+<!-- Main Content -->
+<section class="py-20 px-8 bg-brand-bg">
+<div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 lg:gap-20">
+<!-- Left Column: Booking Form -->
+<div class="md:col-span-7 bg-white rounded-2xl shadow-xl p-8 lg:p-12 border border-brand-bg/50">
+<h2 class="font-headline text-3xl font-bold mb-8 text-brand-dark">Booking Request Form</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-brand-secondary" for="name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all font-body bg-gray-50 text-brand-dark" id="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-brand-secondary" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all font-body bg-gray-50 text-brand-dark" id="phone" placeholder="(555) 123-4567" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-brand-secondary" for="resort">Preferred Resort</label>
+<div class="relative">
+<select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all font-body bg-gray-50 text-brand-dark appearance-none" id="resort">
+<option disabled="" selected="" value="">Select a resort...</option>
+<option value="snowbowl">Arizona Snowbowl</option>
+<option value="sunrise">Sunrise Park Resort</option>
+<option value="lemmon">Mt. Lemmon Ski Valley</option>
+<option value="undecided">Not sure yet / Help me choose</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-brand-secondary">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-brand-secondary" for="experience">Experience Level</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="experience" type="radio" value="beginner"/>
+<div class="rounded-xl border-2 border-gray-100 p-4 text-center hover:bg-brand-bg transition-colors peer-checked:border-brand-primary peer-checked:bg-brand-primary/5">
+<span class="material-symbols-outlined text-brand-secondary block mb-2 text-3xl" data-icon="school">school</span>
+<span class="font-semibold text-brand-dark block text-sm">Absolute Beginner</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="experience" type="radio" value="some"/>
+<div class="rounded-xl border-2 border-gray-100 p-4 text-center hover:bg-brand-bg transition-colors peer-checked:border-brand-primary peer-checked:bg-brand-primary/5">
+<span class="material-symbols-outlined text-brand-secondary block mb-2 text-3xl" data-icon="skateboarding">skateboarding</span>
+<span class="font-semibold text-brand-dark block text-sm">Some Experience</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="experience" type="radio" value="advanced"/>
+<div class="rounded-xl border-2 border-gray-100 p-4 text-center hover:bg-brand-bg transition-colors peer-checked:border-brand-primary peer-checked:bg-brand-primary/5">
+<span class="material-symbols-outlined text-brand-secondary block mb-2 text-3xl" data-icon="downhill_skiing">downhill_skiing</span>
+<span class="font-semibold text-brand-dark block text-sm">Intermediate+</span>
+</div>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-brand-secondary" for="notes">Anything else we should know?</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all font-body bg-gray-50 text-brand-dark resize-none" id="notes" placeholder="Tell us about your goals or if you need gear rental..." rows="3"></textarea>
+</div>
+<button class="w-full bg-brand-primary text-white font-headline font-bold text-lg py-4 rounded-xl shadow-lg shadow-brand-primary/20 hover:bg-[#a67727] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300" type="button">
+                            Request Booking
+                        </button>
+<p class="text-center text-sm text-gray-500 mt-4 font-light">No commitment required. We'll finalize everything together.</p>
+</form>
+</div>
+<!-- Right Column: Trust Section -->
+<div class="md:col-span-5 flex flex-col justify-center space-y-10">
+<div>
+<h3 class="font-headline text-3xl font-bold mb-6 text-brand-dark flex items-center gap-3">
+<span class="material-symbols-outlined text-brand-primary text-4xl" data-icon="verified">verified</span>
+                            Why Learn With Us?
+                        </h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="bg-brand-bg rounded-full p-2 text-brand-secondary shrink-0">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-bold text-brand-dark text-lg">Experienced PSIA-Certified Instructors</h4>
+<p class="text-gray-600 mt-1 leading-relaxed">Learn from professionals who know how to build confidence safely.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="bg-brand-bg rounded-full p-2 text-brand-secondary shrink-0">
+<span class="material-symbols-outlined" data-icon="mood">mood</span>
+</div>
+<div>
+<h4 class="font-bold text-brand-dark text-lg">Beginner-Friendly Approach</h4>
+<p class="text-gray-600 mt-1 leading-relaxed">We specialize in first-timers, ensuring a positive and patient learning environment.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="bg-brand-bg rounded-full p-2 text-brand-secondary shrink-0">
+<span class="material-symbols-outlined" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<div>
+<h4 class="font-bold text-brand-dark text-lg">Tailored for Phoenix &amp; Tucson Residents</h4>
+<p class="text-gray-600 mt-1 leading-relaxed">We understand the desert-to-snow transition and guide you on what to expect and wear.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="bg-brand-bg rounded-full p-2 text-brand-secondary shrink-0">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<div>
+<h4 class="font-bold text-brand-dark text-lg">No-Pressure Planning</h4>
+<p class="text-gray-600 mt-1 leading-relaxed">This form is just to start a conversation. We'll help you figure out the rest.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- What Happens Next Section -->
+<section class="py-24 px-8 bg-brand-secondary text-brand-bg relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute -right-32 -top-32 opacity-10">
+<span class="material-symbols-outlined text-[400px]" data-icon="ac_unit">ac_unit</span>
+</div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4 text-brand-primary">What Happens Next</h2>
+<p class="text-lg opacity-90 max-w-2xl mx-auto">A simple, transparent process to get you from the desert to the slopes.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 text-center relative">
+<!-- Connecting line for desktop -->
+<div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-brand-primary/30 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 bg-brand-dark/40 backdrop-blur-sm p-8 rounded-2xl border border-brand-primary/20">
+<div class="w-24 h-24 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-brand-secondary shadow-lg">
+<span class="material-symbols-outlined text-4xl text-brand-primary" data-icon="ring_volume">ring_volume</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-white">1. We Reach Out</h3>
+<p class="text-sm opacity-80 leading-relaxed">We'll call or text to discuss your goals and answer any initial questions.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 bg-brand-dark/40 backdrop-blur-sm p-8 rounded-2xl border border-brand-primary/20 mt-8 md:mt-0">
+<div class="w-24 h-24 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-brand-secondary shadow-lg">
+<span class="material-symbols-outlined text-4xl text-brand-primary" data-icon="fact_check">fact_check</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-white">2. Confirm Details</h3>
+<p class="text-sm opacity-80 leading-relaxed">We finalize the date, help you with gear needs, and select the best resort.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 bg-brand-dark/40 backdrop-blur-sm p-8 rounded-2xl border border-brand-primary/20 mt-8 md:mt-0">
+<div class="w-24 h-24 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-brand-secondary shadow-lg">
+<span class="material-symbols-outlined text-4xl text-brand-primary" data-icon="celebration">celebration</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-white">3. You're Ready!</h3>
+<p class="text-sm opacity-80 leading-relaxed">Receive your itinerary and hit the slopes with confidence. See you on the mountain!</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E16] dark:bg-[#241E16] text-[#B8862E] dark:text-[#B8862E] font-body text-body full-width">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-headline font-bold text-[#F7F1E4] flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-primary" data-icon="landscape">landscape</span>
+                Arizona Alpine Academy
+            </div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Lessons</a>
+<a class="text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Resorts</a>
+<a class="text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Plan Trip</a>
+<a class="text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">FAQ</a>
+<a class="text-[#F7F1E4] opacity-80 hover:text-[#B8862E] transition-colors" href="#">Privacy Policy</a>
+</nav>
+<div class="text-sm text-[#F7F1E4] opacity-60">
+                © 2024 Arizona Alpine Academy. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
