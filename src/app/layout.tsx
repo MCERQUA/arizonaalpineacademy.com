@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bitter, Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,16 +7,24 @@ import JsonLd from "@/components/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
 
-const bitter = Bitter({
-  subsets: ["latin"],
+const bitter = localFont({
+  src: [
+    { path: "./fonts/Bitter-variable.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Bitter-variable.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/Bitter-variable.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-head",
-  weight: ["500", "600", "700"],
+  adjustFontFallback: "Times New Roman",
 });
 
-const workSans = Work_Sans({
-  subsets: ["latin"],
+const workSans = localFont({
+  src: [
+    { path: "./fonts/WorkSans-variable.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/WorkSans-variable.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/WorkSans-variable.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/WorkSans-variable.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
